@@ -10,7 +10,7 @@ Add the following to your OMG.LOL page `<head>`:
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({zodiac: "♓︎", birthday: "March 5"});
+    OMGEX({zodiac: "♓", birthday: "March 5"});
 });
 </script>
 ```
