@@ -2,7 +2,9 @@
 
 # OMGEX
 
-Extended profile features for OMG.LOL
+Extended profile features for OMG.LOL, your favorite pigeon community.
+
+OMGEX supports all default OMG.LOL themes.
 
 ## Installation
 
