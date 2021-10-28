@@ -10,9 +10,9 @@ window.OMGEX = function (options) {
     }
     if(options.timezone) {
         let details = document.querySelector("#details");
-        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: "CET"})}</div>`;
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}</div>`;
         setInterval(() => {
-            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: "CET"})}`
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}`
         }, 500);
     }
     if(options.terminalKonami) {
