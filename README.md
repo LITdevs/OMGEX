@@ -11,7 +11,7 @@ OMGEX supports all default OMG.LOL themes. Issues and pull requests are welcome,
 Add the following to your OMG.LOL page `<head>`:
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/litdevs/omgex/OMGEX.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
     OMGEX({zodiac: "♓", birthday: "March 5", timezone: "CET", terminalKonami: true});
