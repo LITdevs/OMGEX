@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-    if(!options) return console.error('OMGEX: No options provided');
+    if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
         pronouns.innerHTML = pronouns.innerHTML + ` • <span id="zodiac">${options.zodiac}</span>`;
