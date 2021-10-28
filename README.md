@@ -1,6 +1,6 @@
 <image src=".github/OMGEX.png" width="50" align="left">
 
-# OMGEX
+# OMGEX ("OMG Extended")
 
 Extended profile features for OMG.LOL, your favorite pigeon community.
 
