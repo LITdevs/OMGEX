@@ -4,7 +4,7 @@
 
 Extended profile features for OMG.LOL, your favorite pigeon community.
 
-OMGEX supports all default OMG.LOL themes.
+OMGEX supports all default OMG.LOL themes. Issues and pull requests are welcome, so fire away!
 
 ## Installation
 
@@ -27,7 +27,7 @@ OMGEX has a few settings you can use to customize what it displays. You'll need 
 
 This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex/OMGEX.js) to clear the jsDelivr cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try clearing the jsDelivr cache again.
 
-If it does not say it's throttled, go to your OMG.LOL page and see if it works now - note that you may have to clear your own cache as well. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new).
+If it does not say it's throttled, go to your OMG.LOL page and see if it works now - note that you may have to clear your own cache as well. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new). If you have a fix, pull requests are welcome.
 
 ### zodiac
 
