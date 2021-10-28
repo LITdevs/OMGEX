@@ -27,6 +27,10 @@ This displays your zodiac sign next to your pronouns.
 
 This displays your birthday next to your occupation and location.
 
+### terminalKonami
+
+Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the Konami code is entered.
+
 ### promoteOMGEX
 
-OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`.
+OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`. You won't really have to do this if you're already hiding the footer, since it won't display.
