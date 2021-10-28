@@ -1,4 +1,4 @@
-<image src=".github/OMGEX.png" width="32" align="left" style="margin-right: 0.5em">
+<image src=".github/OMGEX.png" width="50" align="left">
 
 # OMGEX
 
