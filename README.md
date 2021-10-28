@@ -21,9 +21,9 @@ OMGEX has a few settings you can use to customize what it displays. You'll need 
 
 ### A new option isn't working properly!
 
-This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex/OMGEX.js) to refresh the cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try again.
+This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex/OMGEX.js) to clear the jsDelivr cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try refreshing the jsDelivr cache again.
 
-If it does not say it's throttled, go to your OMG.LOL page and see if it works now - you may have to clear your own cache as well. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new).
+If it does not say it's throttled, go to your OMG.LOL page and see if it works now - note that you may have to clear your own cache as well. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new).
 
 ### zodiac
 
