@@ -45,6 +45,10 @@ This displays your current time next to your occupation and location. Note that 
 
 Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the Konami code is entered.
 
+### fixIcons
+
+Using the `/fa-icon/` format in a OMG.LOL profile item assumes you always want to use `fa-solid.` fixIcons is enabled by default, and will allow you to do (for example) `/fa-brands fa-amazon/` without problems. If it is causing problems for you, just set it to `false`.
+
 ### promoteOMGEX
 
 OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`. You won't really have to do this if you're already hiding the footer, since it won't display.

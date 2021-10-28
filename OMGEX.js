@@ -24,6 +24,13 @@ window.OMGEX = function (options) {
             if(c == kCode.length) document.location.href = "https://terminal.land";
         });
     }
+    if(options.fixIcons != false) {
+        document.querySelectorAll(".fa-solid")
+            .forEach(icon => {
+                let otherTypes = ["fa-brands", "fa-regular", "fa-light", "fa-duotone", "fab", "far", "fal", "fad"];
+                if(Array.from(icon.classList).some(classItem => otherTypes.includes(classItem))) icon.classList.remove("fa-solid");
+            });
+    }
     if(options.promoteOMGEX != false) {
         let footer = document.querySelector("#footer");
         footer.innerHTML = footer.innerHTML + `<br><a href="https://github.com/LITdevs/OMGEX#readme"><i class="fas fa-smile-plus"></i> Extended by OMGEX</a>`;
