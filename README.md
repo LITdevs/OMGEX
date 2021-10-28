@@ -1,3 +1,5 @@
+<image src=".github/OMGEX.png" width="32" align="left" style="margin-right: 0.5em">
+
 # OMGEX
 
 Extended profile features for OMG.LOL
