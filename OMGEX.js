@@ -26,6 +26,6 @@ window.OMGEX = function (options) {
     }
     if(options.promoteOMGEX != false) {
         let footer = document.querySelector("#footer");
-        footer.innerHTML = footer.innerHTML + `<br><a href="https://github.com/LITdevs/OMGEX"><i class="fas fa-smile-plus"></i> Extended by OMGEX</a>`;
+        footer.innerHTML = footer.innerHTML + `<br><a href="https://github.com/LITdevs/OMGEX#readme"><i class="fas fa-smile-plus"></i> Extended by OMGEX</a>`;
     }
 }
