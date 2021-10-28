@@ -15,15 +15,15 @@ window.addEventListener('load', function() {
 </script>
 ```
 
-## A new option isn't working properly!
+## Configuration
+
+OMGEX has a few settings you can use to customize what it displays. You'll need at least one, or else it'll throw an error.
+
+### A new option isn't working properly!
 
 This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex/OMGEX.js) to refresh the cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try again.
 
 If it does not say it's throttled, try again now. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new).
-
-## Configuration
-
-OMGEX has a few settings you can use to customize what it displays. You'll need at least one, or else it'll throw an error.
 
 ### zodiac
 
