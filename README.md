@@ -10,7 +10,7 @@ Add the following to your OMG.LOL page `<head>`:
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({zodiac: "♓", birthday: "March 5"});
+    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "CET", terminalKonami: true});
 });
 </script>
 ```
@@ -26,6 +26,10 @@ This displays your zodiac sign next to your pronouns.
 ### birthday
 
 This displays your birthday next to your occupation and location.
+
+### timezone
+
+This displays your current time next to your occupation and location. Note that this is experimental, and output may vary across browsers and machines.
 
 ### terminalKonami
 

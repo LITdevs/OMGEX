@@ -8,6 +8,13 @@ window.OMGEX = function (options) {
         let details = document.querySelector("#details");
         details.innerHTML = details.innerHTML + `<div id="birthday"><i class="fas fa-birthday-cake"></i> ${options.birthday}</div>`;
     }
+    if(options.timezone) {
+        let details = document.querySelector("#details");
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: "CET"})}</div>`;
+        setInterval(() => {
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: "CET"})}`
+        }, 500);
+    }
     if(options.terminalKonami) {
         // courtesy of https://stackoverflow.com/a/62543148
         let c = 0;
