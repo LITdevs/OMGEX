@@ -43,3 +43,26 @@ li:hover .omg-icon {
   transform: scale(1.3)
 }
 ```
+
+  
+### Link hover, icon animation (Pop-out and rotate)
+  
+```css
+/** Link hover, icon animation (Pop-out and rotate) **/  
+li .fa-li {
+  transition: 0.1s ease-out;
+}
+li:hover .fa-li {
+  transform: scale(120%) rotate(-10deg);
+  transition: all 0.1s;
+  transition-timing-function: ease(1, 0.8, 0.5, 1);
+}
+li .omg-icon {
+  transition: 0.1s ease-out;
+}
+li:hover .omg-icon {
+  transform: scale(120%) rotate(-10deg);
+  transition: all 0.1s;
+  transition-timing-function: ease(1, 0.8, 0.5, 1);
+}
+```
