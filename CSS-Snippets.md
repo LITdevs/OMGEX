@@ -18,6 +18,13 @@ Copy any CSS Snipet into your page's `Style` settings.
 This makes your Verification badge (if you have one), pop-out and wiggle every couple seconds.
 ```css
 /** Verification badge animation **/
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   60% { transform: rotate(0deg); }
+   65% { transform: scale(120%) rotate(5deg); }
+   85% { transform: scale(125%) rotate(-5deg);}
+   100% { transform: rotate(0deg); }
+} 
 .fa-badge-check {
   animation: wiggle 2.5s ease infinite;
   transition: 0.5s;
