@@ -54,6 +54,7 @@ li:hover .omg-icon {
   
 ### Link hover, icon animation (Pop-out and rotate)
   
+This makes the icons next to your links, pop-out and rotate when being hovered-over.  
 ```css
 /** Link hover, icon animation (Pop-out and rotate) **/  
 li .fa-li {
