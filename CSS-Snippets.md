@@ -12,6 +12,33 @@ Copy any CSS snippet below into your page's `Style` settings.
   
   
 ## CSS Snippets
+ 
+
+### Change font (Easy)
+  
+Change the font to any [Google webfont](https://fonts.google.com/). *Please keep in mind, you can change 'Montserrat' to any [Google webfont](https://fonts.google.com/).*
+```css
+/** Change font (Easy) **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+* {
+  font-family: 'Montserrat', sans-serif;
+}  
+```
+  
+### Change font (Advanced)
+  
+Change the font to any web supported font. ***You will have to host your own font files for this to work.***
+```css
+/** Change font (Advanced) **/
+@font-face {
+  font-family: 'Monsterrat';
+  src: url('uploading files first');
+  font-display: swap;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}  
+```
   
 ### Verification badge animation
   
