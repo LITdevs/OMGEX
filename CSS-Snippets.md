@@ -8,7 +8,7 @@ Issues and pull requests are welcome, so fire away!
 
 ## Installation
 
-Copy any CSS Snipet into your page's `Style` settings.
+Copy any CSS snippet below into your page's `Style` settings.
   
   
 ## CSS Snippets
