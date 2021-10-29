@@ -8,7 +8,7 @@ OMGEX supports all default OMG.LOL themes. Issues and pull requests are welcome,
 
 ## Installation
 
-Add the following to your OMG.LOL page's `<head>` (You can find this in your addresses profile settings):
+Add the following to your OMG.LOL page's `<head>` (you can find this in your profile settings):
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
