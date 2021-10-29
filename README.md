@@ -14,7 +14,7 @@ Add the following to your OMG.LOL page `<head>`:
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", terminalKonami: true});
+    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", terminalKonami: true, promoteOMGEX: true});
 });
 </script>
 ```
