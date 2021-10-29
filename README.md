@@ -8,7 +8,7 @@ OMGEX supports all default OMG.LOL themes. Issues and pull requests are welcome,
 
 ## Installation
 
-Add the following to your OMG.LOL page `<head>`:
+Add the following to your OMG.LOL page's `<head>` (you can find this in your profile settings):
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
 
 OMGEX has a few settings you can use to customize what it displays. You'll need at least one, or else it'll throw an error.
 
-### A new option isn't working properly!
+### A new option isn't working properly!?
 
 This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js) to clear the jsDelivr cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try clearing the jsDelivr cache again.
 
@@ -35,17 +35,18 @@ This displays your zodiac sign next to your pronouns.
 
 ### birthday
 
-This displays your birthday next to your occupation and location.
+This displays your birthday underneath your occupation and location.
 
 ### timezone
 
-This displays your current time next to your occupation and location. You can find a list of acceptable strings [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) (the TZ database name). 
+This displays your current time underneath your birthday (if enabled) or else, occupation and location. You can find a list of acceptable strings [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) (the TZ database name). 
 
 You may notice that you can also just specify for example CET, but BE WARNED! Some timezones have conflicting names, so it's recommended to just use the TZ database name.
 
 ### terminalKonami
 
-Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the Konami code is entered.
+Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the [Konami code](https://en.wikipedia.org/wiki/Konami_Code) is entered.
+    
 ### promoteOMGEX
 
 OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`. You won't really have to do this if you're already hiding the footer, since it won't display.
