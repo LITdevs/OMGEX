@@ -10,10 +10,15 @@ window.OMGEX = function (options) {
     }
     if(options.timezone) {
         let details = document.querySelector("#details");
+        if(options.timezoneNS){details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: '2-digit', minute:'2-digit'})}</div>`;
+        setInterval(() => {
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: '2-digit', minute:'2-digit'})}`
+        }, 1000);}
+        else{
         details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}</div>`;
         setInterval(() => {
             document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}`
-        }, 500);
+        }, 500);}
     }
     if(options.terminalKonami) {
         // courtesy of https://stackoverflow.com/a/62543148
