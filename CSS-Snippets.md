@@ -31,8 +31,8 @@ Change the font to any web supported font. ***You will have to host your own fon
 ```css
 /** Change font (Advanced) **/
 @font-face {
-  font-family: 'Monsterrat';
-  src: url('uploading files first');
+  font-family: 'Montserrat';
+  src: url('https://raw.githubusercontent.com/LITdevs/OMGEX/main/assets/Montserrat.woff2');
   font-display: swap;
 }
 body {
