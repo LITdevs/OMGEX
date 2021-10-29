@@ -14,7 +14,7 @@ Add the following to your OMG.LOL page `<head>`:
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "CET", terminalKonami: true});
+    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", terminalKonami: true});
 });
 </script>
 ```
@@ -39,18 +39,13 @@ This displays your birthday next to your occupation and location.
 
 ### timezone
 
-This displays your current time next to your occupation and location. Note that this is experimental, and output may vary across browsers and machines.
+This displays your current time next to your occupation and location. You can find a list of acceptable strings [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) (the TZ database name). 
+
+You may notice that you can also just specify for example CET, but BE WARNED! Some timezones have conflicting names, so it's recommended to just use the TZ database name.
 
 ### terminalKonami
 
 Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the Konami code is entered.
-
-### fixIcons
-
-Using the `/fa-icon/` format in a OMG.LOL profile item assumes you always want to use `fa-solid.` fixIcons is enabled by default, and will allow you to do (for example) `/fa-brands fa-amazon/` without problems. If it is causing problems for you, just set it to `false`.
-
-This was added due to https://github.com/neatnik/omg.lol/issues/112.
-
 ### promoteOMGEX
 
 OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`. You won't really have to do this if you're already hiding the footer, since it won't display.
