@@ -35,7 +35,7 @@ Change the font to any web supported font. ***You will have to host your own fon
   src: url('https://raw.githubusercontent.com/LITdevs/OMGEX/main/assets/Montserrat.woff2');
   font-display: swap;
 }
-body {
+* {
   font-family: 'Montserrat', sans-serif;
 }  
 ```
