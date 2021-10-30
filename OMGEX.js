@@ -2,7 +2,12 @@ window.OMGEX = function (options) {
     if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
-        pronouns.innerHTML = pronouns.innerHTML + ` • <span id="zodiac">${options.zodiac}</span>`;
+      	if(pronouns !== null){
+        	pronouns.innerHTML = pronouns.innerHTML + ` • <span id="zodiac">${options.zodiac}</span>`;
+        } else {
+          	let details = document.querySelector("#details");
+          	details.innerHTML = details.innerHTML + `<span id="zodiac">${options.zodiac}</span>`;
+        }
     }
     if(options.birthday) {
         let details = document.querySelector("#details");
