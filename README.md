@@ -42,6 +42,10 @@ This displays your birthday underneath your occupation and location.
 This displays your current time underneath your birthday (if enabled) or else, occupation and location. You can find a list of acceptable strings [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) (the TZ database name). 
 
 You may notice that you can also just specify for example CET, but BE WARNED! Some timezones have conflicting names, so it's recommended to just use the TZ database name.
+    
+### twentyFourHours
+
+Setting this to `true` will show your Time in 24 Hour Time instead of 12 Hour Time (AM/PM)
 
 ### terminalKonami
 
