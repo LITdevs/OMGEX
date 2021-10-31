@@ -14,10 +14,14 @@ window.OMGEX = function (options) {
         details.innerHTML = details.innerHTML + `<div id="birthday"><i class="fas fa-birthday-cake"></i> ${options.birthday}</div>`;
     }
     if(options.timezone) {
+        var hourSetting = false;
+        if(options.TwentyFourHours) {
+        hourSetting = "en-UK";
+        }
         let details = document.querySelector("#details");
-        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}</div>`;
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString(hourSetting, {timeZone: options.timezone})}</div>`;
         setInterval(() => {
-            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}`
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString(hourSetting, {timeZone: options.timezone})}`
         }, 500);
     }
     if(options.terminalKonami) {
