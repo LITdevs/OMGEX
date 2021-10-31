@@ -15,9 +15,10 @@ window.OMGEX = function (options) {
     }
     if(options.timezone) {
         var hourSetting = false;
-        if(options.TwentyFourHours) {
+        if(options.twentyFourHours) {
         hourSetting = "en-UK";
         }
+        console.log(hourSetting);
         let details = document.querySelector("#details");
         details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString(hourSetting, {timeZone: options.timezone})}</div>`;
         setInterval(() => {
