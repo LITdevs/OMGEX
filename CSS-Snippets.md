@@ -37,13 +37,12 @@ This makes your Verification badge pop-out one time when the page loads.
 ```css
 /** Verification badge popout animation **/
 @keyframes popout {
-    0% { transform: scale(50%); }
-   35% { transform: scale(190%); }
-   100% { transform: scale(100%); }
+  0% { transform: scale(50%); }
+  35% { transform: scale(190%); }
+  100% { transform: scale(100%); }
 } 
 .fa-badge-check {
   animation: popout 2s ease;
-  transition: 0.5s;
 }
 ```
   
