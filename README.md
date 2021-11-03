@@ -43,6 +43,10 @@ This displays your current time underneath your birthday (if enabled) or else, o
 
 You may notice that you can also just specify for example CET, but BE WARNED! Some timezones have conflicting names, so it's recommended to just use the TZ database name.
 
+### displaySeconds
+
+Set this to `true` to display seconds in the current time (HH:MM:SS).
+
 ### terminalKonami
 
 Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the [Konami code](https://en.wikipedia.org/wiki/Konami_Code) is entered.
