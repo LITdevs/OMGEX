@@ -42,7 +42,7 @@ This makes your Verification badge pop-out one time when the page loads.
   100% { transform: scale(100%); }
 } 
 .fa-badge-check {
-  animation: popout 2s ease;
+  animation: popout 1.5s ease;
 }
 ```
   
