@@ -24,7 +24,7 @@ window.OMGEX = function (options) {
         details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</div>`;
         setInterval(() => {
             document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
-        }, 500);
+        }, delay);
     }
     if(options.terminalKonami) {
         // courtesy of https://stackoverflow.com/a/62543148
