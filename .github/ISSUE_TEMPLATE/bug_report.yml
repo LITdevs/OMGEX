@@ -11,7 +11,7 @@ body:
           required: true
         - label: I am using the **newest version** of OMGEX.
           required: true
-        - label: I am not using a modified version of OMGEX.
+        - label: I am not using a **modified version** of OMGEX.
           required: true
         - label: I am certain this is a **bug**, not a feature request.
   - type: input
