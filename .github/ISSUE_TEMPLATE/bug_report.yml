@@ -7,7 +7,7 @@ body:
       label: Checklist
       description: Issue will be disregarded & closed if incomplete!
       options:
-        - label: I've **checked both [open and recently closed issues](https://github.com/tetrio/issues/issues?q=is%3Aissue)** to ensure this issue is not already reported.
+        - label: I've **checked both [open and recently closed issues](https://github.com/litdevs/omgex/issues?q=is%3Aissue)** to ensure this issue is not already reported.
           required: true
         - label: I am using the **newest version** of OMGEX.
           required: true
