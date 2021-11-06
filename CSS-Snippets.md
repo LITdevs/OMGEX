@@ -13,11 +13,11 @@ Copy any CSS snippet below into your page's `Style` settings.
   
 ## CSS Snippets
   
-### Verification badge animation
+### Verification badge wiggle animation
   
 This makes your Verification badge (if you have one), pop-out and wiggle every couple seconds.
 ```css
-/** Verification badge animation **/
+/** Verification badge wiggle animation **/
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
    60% { transform: rotate(0deg); }
@@ -28,6 +28,21 @@ This makes your Verification badge (if you have one), pop-out and wiggle every c
 .fa-badge-check {
   animation: wiggle 2.5s ease infinite;
   transition: 0.5s;
+}
+```
+
+### Verification badge popout animation
+
+This makes your Verification badge pop-out one time when the page loads.
+```css
+/** Verification badge popout animation **/
+@keyframes popout {
+  0% { transform: scale(50%); }
+  35% { transform: scale(190%); }
+  100% { transform: scale(100%); }
+} 
+.fa-badge-check {
+  animation: popout 1.5s ease;
 }
 ```
   
