@@ -2,9 +2,9 @@
 
 # OMGEX ("OMG Extended")
 
-Extended profile features for OMG.LOL, your favorite pigeon community.
-
-OMGEX supports all default OMG.LOL themes. Issues and pull requests are welcome, so fire away!
+Extended profile features for OMG.LOL, your favorite pigeon community. OMGEX supports all default OMG.LOL themes. 
+    
+If you have any bugs or feature requests, feel free to [report them](https://github.com/LITdevs/OMGEX/issues/new/choose) or contribute!
 
 ## Installation
 
