@@ -14,11 +14,17 @@ window.OMGEX = function (options) {
         details.innerHTML = details.innerHTML + `<div id="birthday"><i class="fas fa-birthday-cake"></i> ${options.birthday}</div>`;
     }
     if(options.timezone) {
+        let delay = 60000;
+        let timeDisplayOptions = { hour:"2-digit", minute:"2-digit"};
+        if(options.displaySeconds) {
+            delay = 500;
+            timeDisplayOptions.second="2-digit";
+        }
         let details = document.querySelector("#details");
-        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}</div>`;
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</div>`;
         setInterval(() => {
-            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone})}`
-        }, 500);
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
+        }, delay);
     }
     if(options.terminalKonami) {
         // courtesy of https://stackoverflow.com/a/62543148
