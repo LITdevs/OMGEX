@@ -19,12 +19,11 @@ window.OMGEX = function (options) {
         }
         let details = document.querySelector("#details");
         //if location is present, use html span tag to put localtime on the same line. Otherwise use a div.
+        let localtimeTagType="div"
         if(document.getElementById('location')){
-            details.innerHTML = details.innerHTML + `<span id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</span>`;
-        } else {
-            details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</div>`;
+            localtimeTagType="span"
         }
-        
+        details.innerHTML = details.innerHTML + `<${localtimeTagType} id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</${localtimeTagType}>`;
         setInterval(() => {
             document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
         }, delay);
