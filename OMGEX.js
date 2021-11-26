@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-    let version = '1.3.0';
+    let version = '1.2.0';
     if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
@@ -10,6 +10,10 @@ window.OMGEX = function (options) {
           	details.innerHTML = details.innerHTML + `<span id="zodiac">${options.zodiac}</span>`;
         }
     }
+    if(options.birthday) {
+        let details = document.querySelector("#details");
+        details.innerHTML = details.innerHTML + `<div id="birthday"><i class="fas fa-birthday-cake"></i> ${options.birthday}</div>`;
+    }
     if(options.timezone) {
         let delay = 60000;
         let timeDisplayOptions = { hour:"2-digit", minute:"2-digit"};
@@ -18,19 +22,10 @@ window.OMGEX = function (options) {
             timeDisplayOptions.second="2-digit";
         }
         let details = document.querySelector("#details");
-        //if location is present, use html span tag to put localtime on the same line. Otherwise use a div.
-        let localtimeTagType="div"
-        if(document.getElementById('location')){
-            localtimeTagType="span"
-        }
-        details.innerHTML = details.innerHTML + `<${localtimeTagType} id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</${localtimeTagType}>`;
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</div>`;
         setInterval(() => {
             document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
         }, delay);
-    }
-    if(options.birthday) {
-        let details = document.querySelector("#details");
-        details.innerHTML = details.innerHTML + `<div id="birthday"><i class="fas fa-birthday-cake"></i> ${options.birthday}</div>`;
     }
     if(options.terminalKonami) {
         // courtesy of https://stackoverflow.com/a/62543148
