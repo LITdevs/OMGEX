@@ -54,3 +54,6 @@ Setting this to `true` will redirect the user to [terminal.land](https://termina
 ### promoteOMGEX
 
 OMGEX adds a link to its GitHub repo in the footer, but this can be disabled if you prefer - just set this option to `false`. You won't really have to do this if you're already hiding the footer, since it won't display.
+    
+---    
+## OMGEX also has CSS Snippets! Make sure to [check them out!](https://github.com/LITdevs/OMGEX/blob/main/CSS-Snippets.md)
