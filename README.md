@@ -1,6 +1,6 @@
 <image src=".github/OMGEX.png" width="50" align="left">
 
-# OMGEX ("OMG Extended")
+# OMGEX ("OMG Extended") [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
 
 Extended profile features for OMG.LOL, your favorite pigeon community. OMGEX supports all default OMG.LOL themes. 
     
