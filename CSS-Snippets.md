@@ -52,16 +52,10 @@ This makes your Verification badge pop-out one time when the page loads.
 This makes the icons next to your links, pop-out when being hovered-over.
 ```css
 /** Link hover, icon animation (Pop-out) **/
-li .fa-li {
+li .fa-li, li .omg-icon {
   transition: 0.2s ease;
 }
-li:hover .fa-li {
-  transform: scale(1.3)
-}
-li .omg-icon {
-  transition: 0.2s ease;
-}
-li:hover .omg-icon {
+li:hover .fa-li, li:hover .omg-icon {
   transform: scale(1.3)
 }
 ```
@@ -72,18 +66,10 @@ li:hover .omg-icon {
 This makes the icons next to your links, pop-out and rotate when being hovered-over.  
 ```css
 /** Link hover, icon animation (Pop-out and rotate) **/  
-li .fa-li {
+li .fa-li, li .omg-icon {
   transition: 0.1s ease-out;
 }
-li:hover .fa-li {
-  transform: scale(120%) rotate(-10deg);
-  transition: all 0.1s;
-  transition-timing-function: ease(1, 0.8, 0.5, 1);
-}
-li .omg-icon {
-  transition: 0.1s ease-out;
-}
-li:hover .omg-icon {
+li:hover .fa-li, li:hover .omg-icon {
   transform: scale(120%) rotate(-10deg);
   transition: all 0.1s;
   transition-timing-function: ease(1, 0.8, 0.5, 1);
