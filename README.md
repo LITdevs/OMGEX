@@ -14,7 +14,7 @@ Add the following to your OMG.LOL page's `<head>` (you can find this in your pro
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", terminalKonami: true});
+    OMGEX({karma: "vukky", zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", terminalKonami: true});
 });
 </script>
 ```
@@ -23,11 +23,9 @@ window.addEventListener('load', function() {
 
 OMGEX has a few settings you can use to customize what it displays. You'll need at least one, or else it'll throw an error.
 
-### A new option isn't working properly!?
+### karma
 
-This may either be caching issues, or because the feature is broken. You can try going [here](https://purge.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js) to clear the jsDelivr cache - if it says it's throttled, wait until the `throttlingReset` (in seconds) has passed and try clearing the jsDelivr cache again.
-
-If it does not say it's throttled, go to your OMG.LOL page and see if it works now - note that you may have to clear your own cache as well. If it's still broken, [submit a bug report](https://github.com/LITdevs/OMGEX/issues/new). If you have a fix, pull requests are welcome.
+This displays your current karma on the OMG.LOL IRC server. The value is the address people give your karma to (usually the same as your OMG.LOL address).
 
 ### zodiac
 
@@ -46,10 +44,6 @@ You may notice that you can also just specify for example CET, but BE WARNED! So
 ### displaySeconds
 
 Set this to `true` to display seconds in the current time (HH:MM:SS).
-
-### terminalKonami
-
-Setting this to `true` will redirect the user to [terminal.land](https://terminal.land/) when the [Konami code](https://en.wikipedia.org/wiki/Konami_Code) is entered.
     
 ### promoteOMGEX
 

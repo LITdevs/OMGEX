@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-    let version = '1.2.0';
+    let version = '1.3.0';
     if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
@@ -9,6 +9,15 @@ window.OMGEX = function (options) {
           	let details = document.querySelector("#details");
           	details.innerHTML = details.innerHTML + `<span id="zodiac">${options.zodiac}</span>`;
         }
+    }
+    if(options.karma) {
+        if(options.karma.endsWith(".omg.lol")) options.karma = options.karma.split(".omg.lol")[0]
+        fetch(`https://irc.social.lol/api/karma.php?address=${options.karma}`)
+            .then(res => res.json())
+            .then(res => {
+                let karma = res.karma;
+                details.innerHTML = details.innerHTML + `<div id="karma"><i class="fas fa-star"></i> ${karma} <small>(<a href="#" onclick="alert('This is my current karma on the OMG.LOL chat service. Karma points are given to me by other people when I do nice things.')">huh?</a>)</small></div>`;
+            });
     }
     if(options.birthday) {
         let details = document.querySelector("#details");
@@ -26,15 +35,6 @@ window.OMGEX = function (options) {
         setInterval(() => {
             document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
         }, delay);
-    }
-    if(options.terminalKonami) {
-        // courtesy of https://stackoverflow.com/a/62543148
-        let c = 0;
-        const kCode = [38,38,40,40,37,39,37,39,66,65];
-        document.addEventListener('keydown', (e) => {
-            c = (e.keyCode == kCode[c] ? c + 1 : (e.keyCode-38 ? 0 : (c ? (kCode[c-1] == 38 ? c : 0) : 0)));
-            if(c == kCode.length) document.location.href = "https://terminal.land";
-        });
     }
     if(options.promoteOMGEX != false) {
         let footer = document.querySelector("#footer");
