@@ -4,7 +4,7 @@ window.OMGEX = function (options) {
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
       	if(pronouns !== null){
-        	pronouns.innerHTML = pronouns.innerHTML + ` • <span id="zodiac">${options.zodiac}</span>`;
+        	pronouns.innerHTML = pronouns.innerHTML + ` · <span id="zodiac">${options.zodiac}</span>`;
         } else {
           	let details = document.querySelector("#details");
           	details.innerHTML = details.innerHTML + `<span id="zodiac">${options.zodiac}</span>`;
