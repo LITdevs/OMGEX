@@ -30,7 +30,7 @@ window.OMGEX = function (options) {
             delay = 500;
             timeDisplayOptions.second="2-digit";
         }
-        if(options.force24h) timeDisplayOptions.hourCycle = "23h";
+        if(options.force24h) timeDisplayOptions.hourCycle = "h23";
         let details = document.querySelector("#details");
         details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, ...timeDisplayOptions})}</div>`;
         setInterval(() => {
