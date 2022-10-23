@@ -44,6 +44,10 @@ You may notice that you can also just specify for example CET, but BE WARNED! So
 #### displaySeconds
 
 Set this to `true` to display seconds in the current time (HH:MM:SS).
+
+#### force24h
+
+Set this to `true` to force the 24-hour clock in the current time.
     
 ### promoteOMGEX
 
