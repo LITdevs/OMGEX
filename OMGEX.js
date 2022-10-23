@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-    let version = '1.4.1';
+    let version = '1.5.0';
     if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
@@ -30,10 +30,11 @@ window.OMGEX = function (options) {
             delay = 500;
             timeDisplayOptions.second="2-digit";
         }
+        if(options.force24h) timeDisplayOptions.hourCycle = "23h";
         let details = document.querySelector("#details");
-        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}</div>`;
+        details.innerHTML = details.innerHTML + `<div id="localtime"><i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, ...timeDisplayOptions})}</div>`;
         setInterval(() => {
-            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, hour: timeDisplayOptions.hour, minute: timeDisplayOptions.minute, second: timeDisplayOptions.second})}`
+            document.querySelector("#localtime").innerHTML = `<i class="fas fa-clock"></i> ${new Date().toLocaleTimeString([], {timeZone: options.timezone, ...timeDisplayOptions})}`
         }, delay);
     }
     if(options.promoteOMGEX != false) {
