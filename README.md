@@ -41,7 +41,7 @@ This displays your current time underneath your birthday (if enabled) or else, o
 
 You may notice that you can also just specify for example CET, but BE WARNED! Some timezones have conflicting names, so it's recommended to just use the TZ database name.
 
-### displaySeconds
+#### displaySeconds
 
 Set this to `true` to display seconds in the current time (HH:MM:SS).
     
