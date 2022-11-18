@@ -14,7 +14,7 @@ Add the following to your OMG.LOL page's `<head>` (you can find this in your pro
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({karma: "vukky", zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo");
+    OMGEX({karma: "vukky", zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo"});
 });
 </script>
 ```
