@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-    let version = '1.5.1';
+    let version = '1.5.2';
     if(!options || Object.keys(options).length == 0) return console.error('OMGEX: No options provided');
     if(options.zodiac) {
         let pronouns = document.querySelector("#pronouns");
