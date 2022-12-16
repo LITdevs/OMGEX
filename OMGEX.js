@@ -39,6 +39,6 @@ window.OMGEX = function (options) {
     }
     if(options.promoteOMGEX != false) {
         let footer = document.querySelector("#footer");
-        footer.innerHTML = footer.innerHTML + `<br><a href="https://github.com/LITdevs/OMGEX#readme"><i class="fas fa-plug-circle-plus"></i> Extended by OMGEX ${version}</a>`;
+        footer.innerHTML = footer.innerHTML + `<br><a href="https://github.com/LITdevs/OMGEX#readme"><i class="omg-icon omg-vukky" style="color: #00a8f3"></i> Extended by OMGEX ${version}</a>`;
     }
 }
