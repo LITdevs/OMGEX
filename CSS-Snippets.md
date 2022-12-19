@@ -25,7 +25,7 @@ This makes your Verification badge (if you have one), pop-out and wiggle every c
    85% { transform: scale(125%) rotate(-5deg);}
    100% { transform: rotate(0deg); }
 } 
-.fa-badge-check {
+.omg-verified {
   animation: wiggle 2.5s ease infinite;
   transition: 0.5s;
 }
@@ -41,7 +41,7 @@ This makes your Verification badge pop-out one time when the page loads.
   35% { transform: scale(190%); }
   100% { transform: scale(100%); }
 } 
-.fa-badge-check {
+.omg-verified {
   animation: popout 1.5s ease;
 }
 ```
