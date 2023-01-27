@@ -64,7 +64,7 @@ window.OMGEX = function (options) {
       )}`;
     }, delay);
   }
-  if (options.fields) {
+  if (options.fields || Object.keys(options).length > 0) {
     options.fields.forEach((field) => {
       let details = document.querySelector("#details");
       details.innerHTML =
