@@ -8,7 +8,7 @@ If you have any bugs or feature requests, feel free to [report them](https://git
 
 ## Installation
 
-Add the following to your OMG.LOL page's `<head>` (you can find this in your profile settings):
+Add the following to your OMG.LOL page's `<head>` (you can find this in your profile settings), then customize the options as desired.
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
