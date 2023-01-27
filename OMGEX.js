@@ -1,5 +1,5 @@
 window.OMGEX = function (options) {
-  let version = "1.5.2";
+  let version = "1.6.0";
 
   var head = document.getElementsByTagName("head")[0];
   var link = document.createElement("link");
