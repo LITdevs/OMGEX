@@ -14,7 +14,7 @@ Add the following to your OMG.LOL page's `<head>` (you can find this in your pro
 <script src="https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.js"></script>
 <script>
 window.addEventListener('load', function() {
-    OMGEX({karma: "vukky", zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo"});
+    OMGEX({karma: "vukky", zodiac: "♓", birthday: "March 5", timezone: "Europe/Oslo", displaySeconds: true, force24h: true, fields: [{icon: "cat", text: "niko <3"}]});
 });
 </script>
 ```
@@ -48,6 +48,10 @@ Set this to `true` to display seconds in the current time (HH:MM:SS).
 #### force24h
 
 Set this to `true` to force the 24-hour clock in the current time.
+
+### fields
+
+This is an array of objects, allowing you to add custom fields. Each object can have an `icon` and some `text`. The icon must be the name of a free Font Awesome icon.
     
 ### promoteOMGEX
 
