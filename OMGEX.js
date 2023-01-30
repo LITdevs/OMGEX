@@ -1,13 +1,13 @@
 window.OMGEX = function (options) {
   let version = "1.6.0";
 
-  var head = document.getElementsByTagName("head")[0];
+  /*var head = document.getElementsByTagName("head")[0];
   var link = document.createElement("link");
   link.rel = "stylesheet";
   link.type = "text/css";
   link.href = "https://cdn.jsdelivr.net/gh/litdevs/omgex@latest/OMGEX.css";
   link.media = "all";
-  head.appendChild(link);
+  head.appendChild(link);*/
 
   if (!options || Object.keys(options).length == 0)
     return console.error("OMGEX: No options provided");
